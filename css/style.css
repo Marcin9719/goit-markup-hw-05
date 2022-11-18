@@ -1,0 +1,496 @@
+/*zmienne*/
+:root {
+    --dark-color:  #000000;
+    --black-color: #212121;
+    --main-color:  #2196F3; 
+    --grey-color:  #757575;
+    --adress-color: rgba(255, 255, 255, 0.6);
+    --button_text-color: #FFFFFF;
+}
+
+body { 
+font-family: "Roboto", sans-serif; 
+color: var(--black-color);
+font-size: 400;
+}
+
+*{
+	margin: 0; 
+	padding: 0;
+}
+
+.container{
+	margin:0 auto;
+	width: 100%;
+	max-width:1200px;
+	padding: 0 15px;
+	
+}
+
+.section{
+	padding-block: 94px;
+}
+
+h2{
+	margin-bottom: 50px;
+}
+
+
+
+/* ****************************************************************  header  ***************************************************************** */
+
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 46px;
+	border-bottom: 1px solid #ECECEC;
+	
+}
+
+/* ************************************* logo  ********************************* */
+
+.logo{
+	margin-right: 93px;
+	margin-top: 24px;
+	margin-bottom: 25px;
+	}
+
+.logo p:nth-child(1){
+	font-family: 'Raleway';
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	text-align: left;
+	color: var(--main-color);
+	text-decoration: none;
+	float:left;
+}
+
+.logo p:nth-child(2){
+	font-family: 'Oleo Script';
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	text-align: left;
+	color: var(--dark-color);
+	text-decoration: none;
+	float:left;
+}
+
+
+/* *****************  nawigacja  **********************/
+
+nav ul{
+	display:flex;
+	list-style-type: none;
+	flex-grow:1;
+	justify-content: space-between;
+	gap: 46px;
+
+	
+}
+
+nav li{
+	display:flex;
+	align-items: center;
+	
+}
+
+nav li a{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-align: left;
+	color: var(--black-color);
+	text-decoration: none; 
+}
+
+nav ul li a:hover{
+	color: var(--main-color);
+}
+.marked{
+	color: var(--main-color);
+}
+
+
+/* *****************  dane kontaktowe  **********************/
+
+
+.headerContact {
+	display:flex;
+	list-style-type: none;
+	justify-content: space-between;
+	gap: 46px;
+	
+}
+
+.headerContact li{
+	display:flex;
+	align-items: center;
+	font-size: 14px;
+	
+}
+
+	
+.headerContact li a{
+	text-decoration: none;
+	color: var(--grey-color);
+	
+}
+
+.headerContact li  :hover{
+	
+	color: var(--main-color); 
+	text-decoration: none;
+}
+
+
+/* *****************  hasło z przycskiem  **********************/
+
+
+
+.TitleButtonWrapper{
+	background-color:#2f303a;
+	padding-block:200px;
+	display: flex;
+	flex-direction: column;
+	text-align:center;
+	
+}
+
+.TitleButtonWrapper h1{
+	color: var(--button_text-color);
+	text-transform: uppercase;
+	font-weight:900px;
+	line-height:1.36;
+	margin-inline: 452px;
+
+}
+
+
+.buttons{margin-top: 40px;}
+
+.buttons button {
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-align: center;
+	text-decoration: none;
+	background-color: var(--main-color);
+	border: none;
+	padding: 15px 32px;
+	color: var(--button_text-color);
+	margin:auto;
+}
+
+.buttons button:hover{
+	
+	background-color:pink;
+}
+
+/* *****************  lorem  **********************/
+
+.lorem {
+	
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+}
+
+.lorem li{
+	list-style-type: none;
+}
+.lorem h3{
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-align: left;
+	color: var(--black-color);
+	margin-top:94px;
+	font-size: 700;
+}
+
+.lorem p{
+	font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--grey-color);
+    text-decoration: none;
+	margin-top: 10px;
+	}
+
+/* *****************  our goal  **********************/	
+	
+.title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.27;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--black-color);
+    text-decoration: none;
+	margin-top: 94px;
+}
+
+
+
+.ourGoal ul{
+	width:1200px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin:auto;
+	margin-bottom:94px;
+	
+	
+	
+}
+.ourGoal ul li{
+	list-style-type: none;
+}
+
+
+
+
+/* *****************  team  **********************/
+
+
+
+
+.teamBackground{
+	background-color:#F5F4FA;
+}
+
+.team h2{
+	letter-spacing:0.03em;
+	line-height:1.16;
+}
+.containerRamki{
+
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+.ramka{
+	margin-right: 30px;
+	background-color: #FFFFFF;
+	
+}
+img {
+	width: 100%;
+}
+
+.lastRamka{
+	margin-right: 0;
+}
+
+.ramka h3 {
+	text-align:center;
+	font-weight: 500;
+	font-size: 16px;
+	color:var(--black-color);
+	margin-top: 30px;
+}
+.ramka p{
+	text-align:center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 16px;
+	color:var(--grey-color);
+	
+}
+
+.name{
+	font-weight:500;
+	line-height: 1.17;
+	
+	
+}
+
+.work{
+	color: var(--grey-color);
+	line-height: 1.17;
+}
+
+
+
+/* *****************  footer **********************/
+
+footer{
+	
+	background-color:#2F303A;
+	display:block;
+	padding:60px 0;
+}
+
+
+.footerWrapper{
+	display: flex;
+	flex-direction: column;	
+	list-style-type: none;
+}
+
+
+.logoFooter span:nth-child(1){
+	font-family: 'Raleway';
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	text-align: left;
+	color: var(--main-color);
+	text-decoration: none;
+	float:left;
+}
+
+.logoFooter span:nth-child(2){
+	font-family: 'Oleo Script';
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	text-align: left;
+	color: var(--button_text-color);
+	text-decoration: none;
+	float:left;
+}
+
+.logoFooter{
+	margin-bottom: 20px;
+}
+address {
+	color: var(--button_text-color);
+	font-size:14px;
+	line-height:1.71;
+	
+}
+
+.interactive-contact{
+	color: var(--adress-color);
+	text-decoration: none;
+}
+
+.addressGap{margin-top: 9px;}
+
+
+/*************** portfolio ***************************/
+
+.headerWrapper{
+	border-bottom: 1px solid #ECECEC;
+	margin-bottom:94px;
+}
+
+
+.portfolioButtons ul {
+	display:flex;
+	flex-basis: auto;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap:30px;
+	margin-top: 94px;
+	
+}
+
+.portfolioButtons ul li{
+	list-style-type: none;
+	
+	
+	flex-basis: calc(100%*40px)/5;
+
+	
+	
+	
+}
+
+.portfolioButtons ul li button{
+	cursor:pointer;
+	border: none;
+	border-radius:4px;
+	font-weight:500px;
+	font-size:16px;
+	line-height:1.61;
+	font-family:Roboto;
+	letter-spacing:0.03em;
+	padding-block: 6px;
+	padding-inline: 22px;
+}
+.buttonWszystkie{
+	background-color: var(--main-color);
+	color: var(--button_text-color);
+
+}
+
+.portfolioButtons ul li button:hover{
+	background-color:var(--main-color);
+}
+
+.images{
+	
+	margin-top:50px; 
+	margin-inline:auto;
+	
+	
+}
+.imageFrame{
+	display:flex;
+	
+	
+	width:30%;}
+
+.images ul{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	box-sizing: content-box;
+	
+}
+
+.images ul li{
+	width:30%;
+	list-style-type: none;
+	margin-left:0;
+	padding-left:0;
+	box-sizing: content-box;
+	
+	flex-basis: calc(100%-20px)/3;
+	margin-bottom:15px;
+}
+
+.interactive-blue{
+	color: var(--main-color);
+}
+
+.h3WWW{
+	margin-left:24px;
+	margin-top: 20px;
+	
+}
+.KindOfDevice{
+	margin-left:24px;
+	margin-top: 4px;
+	margin-bottom: 20px;
+}
+.portfolioFrame{
+	border: 1px solid #ECECEC; 
+	
+	border-top-style:none;
+	margin: 0;
+	padding: 0;
+	border-top: 0px;
+
+}
