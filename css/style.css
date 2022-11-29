@@ -11,7 +11,7 @@
 body { 
 font-family: "Roboto", sans-serif; 
 color: var(--black-color);
-font-size: 400;
+font-weight: 400;
 }
 
 *{
@@ -35,6 +35,37 @@ h2{
 	margin-bottom: 50px;
 }
 
+
+
+
+
+
+
+.icons_team{
+
+	display: flex;
+	margin-right: 32px;
+	margin-left: 32px;
+	text-align: center;
+}
+.icons_team svg{
+	width: 44px;
+	height: 44px;
+	
+	
+	
+	
+}
+
+
+.icons_team svg:hover{
+	width: 44px;
+	height: 44px;
+	--color1:var(--main-color);
+	--color2:var(--button_text-color);
+	
+	
+}
 
 
 /* ****************************************************************  header  ***************************************************************** */
@@ -70,7 +101,7 @@ header{
 }
 
 .logo p:nth-child(2){
-	font-family: 'Oleo Script';
+	font-family: 'Raleway';
 	font-size: 26px;
 	font-weight: 700;
 	line-height: 1.19;
@@ -137,17 +168,33 @@ nav ul li a:hover{
 }
 
 	
-.headerContact li a{
+.headerContact a{
 	text-decoration: none;
 	color: var(--grey-color);
 	
+	position:relative;
+	
+	
 }
 
-.headerContact li  :hover{
-	
-	color: var(--main-color); 
-	text-decoration: none;
+.icon__contact{
+	width: 16px;
+	height: 12px;
+	margin-right: 10px;
+	fill:var(--grey-color)
+
 }
+
+.icon__contact:hover{
+fill: var(--main-color);
+}
+
+.contactInfo:hover{
+	color: var(--main-color);
+}
+
+
+
 
 
 /* *****************  hasło z przycskiem  **********************/
@@ -155,7 +202,12 @@ nav ul li a:hover{
 
 
 .TitleButtonWrapper{
-	background-color:#2f303a;
+	
+	
+	background:  linear-gradient(#2F303A66, #2F303A66),url("/images/tło_efektywne-rozwiązania.png");	
+	
+	background-size: cover;
+	background-position:center;
 	padding-block:200px;
 	display: flex;
 	flex-direction: column;
@@ -165,10 +217,11 @@ nav ul li a:hover{
 
 .TitleButtonWrapper h1{
 	color: var(--button_text-color);
+	font-size: 44px;
 	text-transform: uppercase;
 	font-weight:900px;
 	line-height:1.36;
-	margin-inline: 452px;
+	margin-inline: 52px;
 
 }
 
@@ -176,7 +229,7 @@ nav ul li a:hover{
 .buttons{margin-top: 40px;}
 
 .buttons button {
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 1.14;
@@ -192,7 +245,7 @@ nav ul li a:hover{
 
 .buttons button:hover{
 	
-	background-color:pink;
+	background-color:palevioletred;
 }
 
 /* *****************  lorem  **********************/
@@ -215,7 +268,6 @@ nav ul li a:hover{
 	letter-spacing: 0.03em;
 	text-align: left;
 	color: var(--black-color);
-	margin-top:94px;
 	font-size: 700;
 }
 
@@ -229,6 +281,12 @@ nav ul li a:hover{
 	margin-top: 10px;
 	}
 
+	.loremIcon{
+		width: 270px;
+		height: 120px;
+		margin-bottom: 30px;
+	}
+
 /* *****************  our goal  **********************/	
 	
 .title{
@@ -239,7 +297,6 @@ nav ul li a:hover{
     text-align: center;
     color: var(--black-color);
     text-decoration: none;
-	margin-top: 94px;
 }
 
 
@@ -250,12 +307,9 @@ nav ul li a:hover{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin:auto;
-	margin-bottom:94px;
-	
-	
-	
+	margin:auto;	
 }
+
 .ourGoal ul li{
 	list-style-type: none;
 }
@@ -287,6 +341,7 @@ nav ul li a:hover{
 .ramka{
 	margin-right: 30px;
 	background-color: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	
 }
 img {
@@ -325,8 +380,24 @@ img {
 	line-height: 1.17;
 }
 
+/* *******************klienci *****************/
 
+.clientsLogo{
+	display: flex;
+	justify-content: space-between;
+	
+}
 
+.clientsLogo svg{
+	height: 60px;
+	width: 170px;
+	outline:1px solid #757575;
+}
+
+.clientsLogo svg:hover{
+	--color1:var(--main-color);
+	outline:1px solid var(--main-color);
+}
 /* *****************  footer **********************/
 
 footer{
@@ -339,10 +410,20 @@ footer{
 
 .footerWrapper{
 	display: flex;
-	flex-direction: column;	
-	list-style-type: none;
+	flex-direction: row;	
+	
+	justify-content: left;
+	gap:30px;
+	
+
 }
 
+.addressWrapeer{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+
+}
 
 .logoFooter span:nth-child(1){
 	font-family: 'Raleway';
@@ -357,7 +438,7 @@ footer{
 }
 
 .logoFooter span:nth-child(2){
-	font-family: 'Oleo Script';
+	font-family: 'Raleway';
 	font-size: 26px;
 	font-weight: 400;
 	line-height: 1.19;
@@ -371,6 +452,8 @@ footer{
 .logoFooter{
 	margin-bottom: 20px;
 }
+
+
 address {
 	color: var(--button_text-color);
 	font-size:14px;
@@ -384,6 +467,36 @@ address {
 }
 
 .addressGap{margin-top: 9px;}
+
+
+.footerSecondColunm h3{
+	font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        padding-bottom: 10px;
+		color: var(--button_text-color);
+		margin-bottom: 24px;
+}
+.iconsFooterWrap{
+	display: flex;
+	
+}
+
+.iconsFooterWrap svg{
+	width: 44px;
+	height: 44px;
+	margin-right: 20px;
+	--color1:var(--grey-color);
+	--color2:var(--button_text-color);
+	
+}
+
+.iconsFooterWrap svg:hover{
+	
+	--color1:var(--main-color);
+	--color2:var(--button_text-color);
+	
+}
 
 
 /*************** portfolio ***************************/
@@ -400,8 +513,9 @@ address {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap:30px;
+	gap:30px 8px;
 	margin-top: 94px;
+	
 	
 }
 
@@ -411,9 +525,6 @@ address {
 	
 	flex-basis: calc(100%*40px)/5;
 
-	
-	
-	
 }
 
 .portfolioButtons ul li button{
@@ -423,26 +534,32 @@ address {
 	font-weight:500px;
 	font-size:16px;
 	line-height:1.61;
-	font-family:Roboto;
+	font-family: 'Roboto';
 	letter-spacing:0.03em;
 	padding-block: 6px;
 	padding-inline: 22px;
-}
-.buttonWszystkie{
-	background-color: var(--main-color);
-	color: var(--button_text-color);
 
 }
+
+
+
 
 .portfolioButtons ul li button:hover{
 	background-color:var(--main-color);
+	color: var(--button_text-color);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+
+
+
+
+
+
 .images{
-	
-	margin-top:50px; 
+	 
 	margin-inline:auto;
-	
+	display:block
 	
 }
 .imageFrame{
@@ -466,9 +583,12 @@ address {
 	margin-left:0;
 	padding-left:0;
 	box-sizing: content-box;
-	
 	flex-basis: calc(100%-20px)/3;
 	margin-bottom:15px;
+}
+
+.images ul li:hover{
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .interactive-blue{
@@ -476,8 +596,9 @@ address {
 }
 
 .h3WWW{
-	margin-left:24px;
-	margin-top: 20px;
+	padding-left:24px;
+	padding-top: 20px;
+	display: block;
 	
 }
 .KindOfDevice{
@@ -486,11 +607,12 @@ address {
 	margin-bottom: 20px;
 }
 .portfolioFrame{
+	display: block;
 	border: 1px solid #ECECEC; 
-	
 	border-top-style:none;
 	margin: 0;
 	padding: 0;
 	border-top: 0px;
+
 
 }
