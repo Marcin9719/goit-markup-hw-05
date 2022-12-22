@@ -418,34 +418,29 @@ footer{
 
 }
 
-.logoFooter span:nth-child(1){
+.logoFooter{
+	margin-bottom: 20px;
+}
+
+.logoFooter span{
 	font-family: 'Raleway';
 	font-size: 26px;
 	font-weight: 700;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 	text-align: left;
-	color: var(--main-color);
 	text-decoration: none;
-	float:left;
+	float: left;	
 }
-
-.logoFooter span:nth-child(2){
-	font-family: 'Raleway';
-	font-size: 26px;
-	font-weight: 400;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
-	text-align: left;
-	color: var(--button_text-color);
-	text-decoration: none;
-	float:left;
+	
+.logoFooter span:nth-child(1) {	
+color: var(--main-color);
 }
-
-.logoFooter{
-	margin-bottom: 20px;
+	
+.logoFooter span:nth-child(2) {
+color: var(--button_text-color);
 }
-
+	
 
 address {
 	color: var(--button_text-color);
