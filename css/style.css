@@ -245,7 +245,7 @@ fill: var(--main-color);
 
 .buttons button:hover{
 	
-	background-color:palevioletred;
+	background-color: red;
 }
 
 /* *****************  lorem  **********************/
